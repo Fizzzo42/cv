@@ -3,8 +3,8 @@
 \documentclass[11pt,a4paper,sans]{moderncv}   % ('10pt', '11pt' and '12pt'), ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' or 'landscape') , ('sans' or 'roman')
 
 % ModernCV Themes
-\moderncvstyle{casual}                        % 'casual' (default),'classic', 'oldstyle' or 'banking'
-\moderncvcolor{blue}                          % 'blue', 'orange', 'green', 'red', 'purple', 'grey' or 'black'
+\moderncvstyle{banking}                        % 'casual' (default),'classic', 'oldstyle' or 'banking'
+\moderncvcolor{orange}                          % 'blue', 'orange', 'green', 'red', 'purple', 'grey' or 'black'
 %\nopagenumbers{}
 
 % ajustes para los margenes de pagina
@@ -16,7 +16,7 @@
 
 % Personal data
 \name{Özhan}{Kaya}
-\title{Lebenslauf}
+\title{CV}
 \address{Ufmattenstrasse 57}
 \phone[mobile]{+41792840813}
 \phone[fixed]{+413641176}
@@ -24,12 +24,27 @@
 \email{Fizzzo42@gmail.com}
 \homepage{www.kayaapps.ch}
 %\extrainfo{informacion adicional}
-%\photo[64pt][0.4pt]{picture}
-\quote{Additional info}
+\photo[64pt][0.4pt]{picture}
+\quote{Add Quote here}
+\social[github]{Fizzzo42}
+
+% Needed to add picture to "banking style"
+\makeatletter
+\@ifpackageloaded{moderncvstylebanking}{%
+\let\oldmakecvtitle\makecvtitle
+\renewcommand*{\makecvtitle}{%
+  {\centering\framebox{\includegraphics[width=\@photowidth]{\@photo}}\par\vspace{10pt}}%
+  \oldmakecvtitle%
+}%
+}{%
+}
+\makeatother
+
 
 \begin{document}
 %\begin{CJK*}{UTF8}{gbsn}                     % para redactar el CV en chino usando CJK
-\maketitle
+%\maketitle
+\makecvtitle
 
 \section{Formaci\'on acad\'emica}
 \cventry{a\~no--a\~no}{Grado}{Instituci\'on}{Ciudad}{\textit{Grade}}{Descripci\'on}  % Los argumentos del 3 al 6 pueden permanecer vacios
