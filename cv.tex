@@ -3,7 +3,7 @@
 % Telling sharelatex which compiler has to be used
 % !TEX program = pdflatex
 
-\documentclass[11pt,a4paper,sans]{moderncv}   % ('10pt', '11pt' and '12pt'), ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' or 'landscape') , ('sans' or 'roman')
+\documentclass[10pt,a4paper,sans]{moderncv}   % ('10pt', '11pt' and '12pt'), ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' or 'landscape') , ('sans' or 'roman')
 
 % ModernCV Themes
 \moderncvstyle{banking}                        % 'casual' (default),'classic', 'oldstyle' or 'banking'
@@ -11,7 +11,7 @@
 %\nopagenumbers{}
 
 % ajustes para los margenes de pagina
-\usepackage[scale=0.75]{geometry}
+\usepackage[scale=0.85]{geometry}
 %\setlength{\hintscolumnwidth}{3cm}
 
 \usepackage[utf8]{inputenc}					% Added so I can use special letters like an "Ö"
@@ -25,7 +25,7 @@
 \phone[fixed]{+413641176}
 %\phone[fax]{+3~(456)~789~012}
 \email{Fizzzo42@gmail.com}
-\homepage{www.kayaapps.ch}
+\homepage{www.kayaapps.com}
 %\extrainfo{informacion adicional}
 \photo[64pt][0.4pt]{picture}
 \quote{Up to date version of this CV is available \href{https://github.com/Fizzzo42/cv}{\textbf{here}}}
@@ -50,8 +50,8 @@
 \makecvtitle
 
 \section{Ausbildung}
-\cventry{2013--2016}{HSR Hochschule für Technik Rapperswil}{Bachelor of Science FHO in Computer Science}{Rapperswil}{\textit{Note: -}}{Vollzeit}
-\cventry{2012--2013}{BBW Berufsbildungsschule Winterthur}{Berufsmaturität (Technische Richtung)}{Winterthur}{\textit{Note: -}}{Vollzeit}
+\cventry{2013--2016}{HSR Hochschule für Technik Rapperswil}{Bachelor of Science FHO in Computer Science}{Rapperswil}{\textit{Note: -}}{Vollzeit (voraussichtlich)}
+\cventry{2012--2013}{BBW Berufsbildungsschule Winterthur}{Berufsmaturität (Technische Richtung)}{Winterthur}{\textit{Note: 4.8}}{Vollzeit}
 \cventry{2008--2012}{MSW Mechatronik Schule Winterthur}{Berufslehre Elektroniker Profil E}{Winterthur}{\textit{Note: 5.1}}{EFZ, IPA Note: 5.8}
 
 %\section{Tesis de maestr\'ia}
@@ -59,35 +59,20 @@
 %\cvitem{sinodares}{Sinodales}
 %\cvitem{descripci\'on}{Una breve descripci\'on de la tesis}
 
-\section{}
-\subsection{Vocacional}
-\cventry{a\~no--a\~no}{t\'itulo del puesto}{Empleador}{Ciudad}{}{Descripci\'on general, no m\'as de 1 \'o 2 l\'ineas.\newline{}%
-Detalle de logros:%
-\begin{itemize}%
-\item Logro 1;
-\item Logro 2, con sub-logros:
-  \begin{itemize}%
-  \item Sub-logro (a);
-  \item Sub-logro (b), con sub-sub-logros (¡evite hacer esto!);
-    \begin{itemize}
-    \item Sub-sub-logro i;
-    \item Sub-sub-logro ii;
-    \item Sub-sub-logro iii;
-    \end{itemize}
-  \item Sub-logro (c);
-  \end{itemize}
-\item Logro 3.
-\end{itemize}}
-\cventry{a\~no--a\~no}{t\'itulo del puesto}{Empleador}{Ciudad}{}{Descripci\'on l\'inea 1\newline{}Descripci\'on l\'inea 2}
-\subsection{Miscel\'aneo}
-\cventry{a\~no--a\~no}{t\'itulo del puesto}{Empleador}{Ciudad}{}{Descripci\'on}
+
 
 \section{Sprachen}
 \cvitem{Deutsch}{Muttersprache}
 \cvitem{Türkisch}{Muttersprache}
-\cvitemwithcomment{Englisch}{Niveau C1 (Advanced)}{Comentario}
+\cvitemwithcomment{Englisch}{Niveau C1 (Advanced)}{sehr gut in Sprache und Schrift}
 \cvitem{Französisch}{Schulkenntnisse}
 \cvitemwithcomment{Mandarin}{Grundkenntnisse}{Module Chin1 \& Chin2 (HSR)}
+
+\section{Technologien \& Fähigkeiten}
+\cvdoubleitem{Sprachen:}{Java, C++11, ANSI C, Bash, PHP}{Engineering:}{Jenkins, Travis CI, Gradle, Git}
+\cvdoubleitem{Infrastruktur:}{Linux, Mac OS, Windows, Android}{Datenbanken:}{Postgres (Relational), Redis (Key-Value)}
+\cvdoubleitem{Web:}{HTML, CSS, JavaScript, JSF, Play, AngularJS, NodeJS}{Elektronik:}{Schaltungsentwicklung, $\mu$C-Programmierung (Atmel, Hitachi, Phillips), I2C, SPI, Eagle, Messtechnik}
+\cvitem{Sonstiges:}{Android, RabbitMQ, \LaTeX}
 
 \section{Conocimientos de computaci\'on}
 \cvdoubleitem{categor\'ia 1}{XXX, YYY, ZZZ}{categor\'ia 4}{XXX, YYY, ZZZ}
@@ -95,7 +80,7 @@ Detalle de logros:%
 \cvdoubleitem{categor\'ia 3}{XXX, YYY, ZZZ}{categor\'ia 6}{XXX, YYY, ZZZ}
 
 \section{Hobbies \& Interessen}
-\cvitem{Elektronik}{Mikrokontrollerprogrammierung \& Schaltungsentwicklung}
+\cvitem{Elektronik}{$\mu$C-Programmierung \& Schaltungsentwicklung}
 \cvitem{Informatik}{Programmierung, Gadgets, neue Technologien}
 
 \section{Extra 1}
