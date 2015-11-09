@@ -9,3 +9,4 @@ Just a repo for my CV ;)
 * Automatische Altersberechnung
 * evt. Referenz aufführen
 * Weitere Diplome auflisten
+* Studiuminhalt (Module) genauer spezifizieren
