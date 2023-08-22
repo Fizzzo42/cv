@@ -1,33 +1,14 @@
-% Copyright 2015 by Özhan Kaya (Fizzzo42@gmail.com)
-
-% Telling sharelatex which compiler has to be used
-% !TEX program = pdflatex
-
 \documentclass[10pt,a4paper,sans]{moderncv}   % ('10pt', '11pt' and '12pt'), ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' or 'landscape') , ('sans' or 'roman')
 
 % ModernCV Themes
-\moderncvstyle{banking}          		% 'casual' (default),'classic', 'oldstyle' or 'banking'
-\moderncvcolor{orange}          		% 'blue', 'orange', 'green', 'red', 'purple', 'grey' or 'black'
+\moderncvstyle{banking}             % 'casual' (default),'classic', 'oldstyle' or 'banking'
+\moderncvcolor{orange}              % 'blue', 'orange', 'green', 'red', 'purple', 'grey' or 'black'
 %\nopagenumbers{}
 
 \usepackage[scale=0.85]{geometry}
 %\setlength{\hintscolumnwidth}{3cm}
 
-\usepackage[utf8]{inputenc}		% Added so I can use special letters like an "Ö"
-
-% Personal data
-\name{Özhan}{Kaya}
-\title{Lebenslauf}
-\address{Ufmattenstrasse 57, 8303 Bassersdorf}
-\phone[mobile]{+41792840813}
-\phone[fixed]{+413641176}
-%\phone[fax]{+3~(456)~789~012}
-\email{Fizzzo42@gmail.com}
-%\homepage{www.kayaapps.com}
-\extrainfo{25.10.1991, ledig}
-\photo[75pt][0pt]{photo}
-%\quote{Aktuelle Version des Lebenslaufs auf \href{https://github.com/Fizzzo42/cv}{\textbf{Github}}.}
-\social[github]{Fizzzo42}
+\usepackage[utf8]{inputenc}   % Added so I can use special letters like an "Ö"
 
 % New command "makecvtitle" (needed to add image on top of title)
 \makeatletter
@@ -37,38 +18,61 @@
   {\centering\framebox{\includegraphics[width=\@photowidth]{\@photo}}\par\vspace{10pt}}%
   \oldmakecvtitle%
 }}{}
-\makeatother
 
+% Personal data
+\name{Özhan}{Kaya}
+\title{CV}
+\address{Winterthur}
+\email{Fizzzo42@gmail.com}
+\homepage{coolsolutions.ch}
+\extrainfo{25.10.1991}
+\social[github][github.com/fizzzo42]{GitHub}
+\photo[75pt][0pt]{photo}
+\social[linkedin][linkedin.com/in/\%C3\%B6zhan-kaya-91ab46b7/]{LinkedIn}
 
 \begin{document}
-%\maketitle
 \makecvtitle
 
-\section{Ausbildung}
-\cventry{2013--2016}{HSR Hochschule f\"ur Technik Rapperswil}{Bachelor of Science FHO in Computer Science}{Rapperswil}{\textit{Note: -}}{Vollzeit}
-\cventry{2012--2013}{BBW Berufsbildungsschule Winterthur}{Berufsmaturit\"at (Technische Richtung)}{Winterthur}{\textit{Note: 4.8}}{Vollzeit}
-\cventry{2008--2012}{MSW Mechatronik Schule Winterthur}{Berufslehre Elektroniker Profil E}{Winterthur}{\textit{Note: 5.1}}{EFZ, IPA Note: 5.8}
+\section{Work Experience}
+\cventry{2022--2023}{Self-Hosted K8S Cluster of 2 ARM Nodes. Flutter. Deep Learning. Game Development. Self Education.}{Sabbatical Year}{Winterthur}{}{}
+\cventry{2019--2022}{10+ Team Members. 100+ Apps. 50+ Hosts}{Technical Lead / Lead Developer - 3-D Secure}{Netcetera AG}{}{Incident Management, Architectural Decisions \& Alignment. Change Requests. Coaching \& Motivation. Tech Evaluation.}
+\cventry{2020--2022}{Technical and Administrative Key Management Topics}{Key Custodian}{Netcetera AG}{}{}
+\cventry{2018--2020}{Approx. 20+ Interviews}{Applicant Interviewing}{Netcetera AG}{}{}
+\cventry{2018--2020}{24h Duty for PROD Systems}{OCDO (On-Call Duty Officer) Team Member}{Netcetera AG}{}{}
+\cventry{2016--2020}{Software Engineer}{Software Engineer - Credit Card Management Solution}{Netcetera AG}{}{Emission and Mutation of Credit Cards. 2 Web Apps, 10+ Shell Scripts}
 
-\section{Erfahrungen}
-\cventry{2016}{Betreuung: IFS - Institut f\"ur Software, Note: -}{\href{http://sinv-56012.edu.hsr.ch/ccglator}{\textbf{Bachelorarbeit: C++ Core Guidelines Constructor Rules Checker and Quick-fixes}}}{Rapperswil}{}{2er Team, Umfang: 360h pro Person}
-\cventry{2015}{Betreuung: IFS - Institut f\"ur Software, Note: 5.5}{\href{http://sinv-56012.edu.hsr.ch/video.mp4}{\textbf{Studienarbeit: C++11 Type Alias Extraction Plug-In f\"ur Eclipse}}}{Rapperswil}{}{2er Team, Umfang: 2/3 Bachelorarbeit}
-\cventry{2014--2015}{HSR Hochschule f\"ur Technik Rapperswil}{\href{http://appquest.hsr.ch/}{\textbf{Coach an der AppQuest 2014 \& 2015}}}{Rapperswil}{}{Betreuung von 3 Teams w\"ahrend 12 Wochen}
+\section{Education}
+\cventry{2013--2016}{Full-time}{Bachelor of Science FHO in Computer Science}{OST - Rapperswil}{}{}
+\cventry{2012--2013}{Full-time}{Berufsmaturität}{BBW Berufsbildungsschule Winterthur}{}{}
+\cventry{2008--2012}{Full-time}{Apprenticeship Electronics Engineer}{MSW Mechatronik Schule Winterthur}{}{}
 
-\section{Sprachen}
-\cvdoubleitem{Deutsch}{Muttersprache}{T\"urkisch}{Muttersprache}
-\cvdoubleitem{Englisch}{Sehr gut in Sprache und Schrift}{Franz\"osisch}{Schulkenntnisse}
-\cvitem{Mandarin}{Grundkenntnisse (Modul Chinesisch 1 (HSR))}
+\section{Theses \& Certificates}
+\cventry{2020--2023}{Kubernetes Administrator, Flutter, Deep Learning. Game Development. Docker and Kubernetes.}{Udemy Courses}{Udemy}{}{}
+\cventry{2020--2023}{Leading SAFe. Security Training for System Administrators. Java 11.}{Work Courses}{Netcetera AG}{}{}
+\cventry{2016}{IFS - Institut für Software, Grade: 5.8}{\href{https://youtu.be/CeNdN5KlPGc}{Bachelor Thesis: C++ Core Guidelines Constructor Rules Checker and Quick-fixes}}{OST - Rapperswil}{}{Team of Two. 360 hours per Person}
+\cventry{2015}{IFS - Institut für Software, Grade: 5.5}{\href{https://youtu.be/QNrb_LbuYmI}{Student Project: C++11 Type Alias Extraction Plug-In for Eclipse}}{OST - Rapperswil}{}{Team of Two. 2/3 of Bachelor Thesis}
+\cventry{2014--2015}{Coaching 3 Teams during 12 Weeks}{\href{https://www.ost.ch/de/die-ost/campus/campus-rapperswil-jona/nachwuchs/app-quest}{\textbf{AppQuest 2014 \& 2015 Coach}}}{OST - Rapperswil}{}{}
 
-\section{Technologien \& F\"ahigkeiten}
-\cvdoubleitem{Sprachen:}{Java, C++11, ANSI C, Bash, PHP}{Engineering:}{Git, Jenkins, Gradle, Travis CI}
-\cvdoubleitem{Web:}{HTML, JavaScript, CSS, Play, AngularJS, NodeJS, JSF, Spring}{Elektronik:}{$\mu$C-Programmierung (Atmel, Hitachi, Phillips), Schaltungsentwicklung, I$^2$C, SPI, Eagle, Messtechnik}
-\cvdoubleitem{Infrastruktur:}{Linux, Mac OS X, Windows, Android}{Sonstiges:}{Android, \LaTeX, RabbitMQ}
-\cvitem{Datenbanken:}{Postgres, MySQL (Relational), Redis (Key-Value)}
+\section{Languages}
+\cvdoubleitem{German}{Native}{Turkish}{Native}
+\cvdoubleitem{English}{Fluent}{French}{Basics}
+\cvdoubleitem{Spanish}{Basics}{Mandarin}{Basics}
 
-\section{Hobbies \& Interessen}
-\cvitem{Informatik}{Programmierung, Gadgets, neue Technologien}
-\cvitem{E-Sports}{Kommentator, Streamer, Spieler}
-\cvitem{Sonstiges}{Socializing, Spazierg\"ange}
+\section{Technologies \& Skills}
+\cvitem{Programming Languages:}{Java, Bash, Python, C++11, GDScript, ANSI C, PHP}
+\cvitem{Engineering:}{Git, Maven, Jenkins, Travis CI}
+\cvitem{Frameworks:}{Spring Boot, Flutter (Desktop and Mobile), PyTorch, HTML, JavaScript, CSS, AngularJS, NodeJS, JSF}
+\cvitem{Infrastructure:}{Kubernetes, System Administration Skills, Docker, Linux, Mac, Windows, Android, iOS}
+\cvitem{Databases:}{Postgres, Redis, Oracle DB, SQLite, MySQL}
+\cvitem{Electronics:}{Microcontroller Programming (Atmel, Hitachi, Phillips), Circuit Development, I$^2$C, SPI, 3D Printing.}
+\cvitem{Others:}{Godot Engine, RabbitMQ, Grafana, Kibana, \LaTeX, Analytical Skills, Social Skills, Emotional Intelligence}
+
+
+\section{Hobbies \& Interests}
+\cvitem{IT}{Hobby Projects, News and Technologies, Gadgets}
+\cvitem{Gardening}{Balcony and Outdoor Gardening}
+\cvitem{Gaming}{Competitive. Social. Balance}
+\cvitem{Others}{Running, Socializing, Sports}
 
 \end{document}
 

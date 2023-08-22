@@ -1,12 +1,4 @@
 # CV
-Just a repo for my CV ;)
+Just a repo for my CV. Is it a good idea to have this public? I don't know :).
 
-
-[Download PDF](https://www.sharelatex.com/github/repos/Fizzzo42/cv/builds/latest/output.pdf)
-
-#### Todo:
-* Befehl *\age* für modernCV erstellen
-* Automatische Altersberechnung
-* evt. Referenz aufführen
-* Weitere Diplome auflisten
-* Studiuminhalt (Module) genauer spezifizieren
+Compiled using overleaf.com
